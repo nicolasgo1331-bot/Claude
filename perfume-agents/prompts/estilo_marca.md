@@ -1,0 +1,1 @@
+Fondo oscuro elegante con acentos dorados, tipografía serif de alto contraste para títulos y sans fina para texto, mucho aire, fotografía realista de perfumes e ingredientes. (Edita este archivo con la identidad real de tu perfil.)

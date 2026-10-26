@@ -1,0 +1,1 @@
+- Último dato, separado del resto: ícono dorado de frasquito de perfume + "INSPIRADO EN" y debajo "{{inspirado_en}}"
