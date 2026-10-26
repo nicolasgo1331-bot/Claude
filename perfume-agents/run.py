@@ -3,6 +3,7 @@
   python run.py imagenes foto.png "Armaf Odyssey Limoni" -> genera las 3 imágenes con control de calidad
   python run.py aprobar  "Armaf Odyssey Limoni"          -> marca el set como aprobado
   python run.py copy     "Armaf Odyssey Limoni"          -> escribe el copy a partir de la imagen 3
+  python run.py prompts  "Armaf Odyssey Limoni"          -> imprime los 3 prompts ya rellenados (para pegar en la app de Gemini)
   python run.py carrusel ["tema"] [--render N]           -> ideas virales (y render de la idea N)
 """
 import argparse
@@ -12,6 +13,7 @@ from pathlib import Path
 
 from PIL import Image
 
+from agentes.plantillas import cargar
 from agentes import carruseles, copywriter, fotografo, investigador
 
 SALIDA = Path(__file__).parent / "salida"
@@ -20,7 +22,7 @@ SALIDA = Path(__file__).parent / "salida"
 def main(argv=None, llm=None):
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
-    for c in ("ficha", "aprobar", "copy"):
+    for c in ("ficha", "aprobar", "copy", "prompts"):
         sub.add_parser(c).add_argument("perfume")
     sub.choices["ficha"].add_argument("--notas", default="", help="datos que ya confirmaste")
     p = sub.add_parser("imagenes"); p.add_argument("foto"); p.add_argument("perfume")
@@ -50,6 +52,11 @@ def main(argv=None, llm=None):
         print(f"Ficha en {carpeta/'ficha.json'}. Revisa 'dudas' y corrige antes de generar imágenes.")
         if ficha.get("dudas"):
             print("Dudas:", *ficha["dudas"], sep="\n - ")
+    elif a.cmd == "prompts":
+        ficha = investigador.cargar_ficha(carpeta)
+        for n, p in (("1", cargar("01_escena_caja", **fotografo._vars_escena(ficha))), ("2", cargar("02_solo_frasco")),
+                     ("3", cargar("03_info", **fotografo._vars_info(ficha)))):
+            print(f"\n===== PROMPT {n} =====\n{p}")
     elif a.cmd == "imagenes":
         ficha = investigador.cargar_ficha(carpeta)
         fotografo.generar_set(llm, a.foto, ficha, carpeta)

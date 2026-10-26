@@ -1,1 +1,1 @@
-Cercana, elegante y entusiasta; español neutro latinoamericano, tuteo, sin exagerar con signos ni mayúsculas. Emojis con moderación (2-4). Transmite deseo y confianza, nunca presión de venta.
+Cercana, elegante y entusiasta; español rioplatense/argentino con voseo ("consultá", "descubrilo", "elegí"), tono de emprendimiento de confianza. Emojis con moderación (2-4). Transmite deseo y confianza, nunca presión de venta. Datos de la marca: perfumes originales, envíos a todo el país, venta minorista y mayorista.
