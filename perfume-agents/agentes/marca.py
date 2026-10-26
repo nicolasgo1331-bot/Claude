@@ -3,17 +3,18 @@ from pathlib import Path
 from PIL import Image, ImageFilter
 
 
-def poner_logo(img, logo_path, ancho=0.2, margen=0.03):
-    """Pega tu logo abajo al centro, de forma determinista (la IA no lo toca)."""
+def poner_logo(img, logo_path, ancho=0.2, margen=0.03, opacidad=0.7):
+    """Pega tu logo abajo al centro (opacidad 70% por defecto), de forma determinista (la IA no lo toca)."""
     if not Path(logo_path).exists():
         return img
     logo = Image.open(logo_path).convert("RGBA")
     w = int(img.width * ancho)
     logo = logo.resize((w, int(logo.height * w / logo.width)))
+    logo.putalpha(logo.getchannel("A").point(lambda a: int(a * opacidad)))
     base = img.convert("RGBA")
     # sombra suave para que el logo blanco se lea también sobre fondos claros
     sombra = Image.new("RGBA", logo.size, (0, 0, 0, 0))
-    sombra.putalpha(logo.getchannel("A").point(lambda a: int(a * 0.65)))
+    sombra.putalpha(logo.getchannel("A").point(lambda a: int(a * 0.65 * opacidad)))
     pad = 12
     lienzo = Image.new("RGBA", (w + 2 * pad, logo.height + 2 * pad), (0, 0, 0, 0))
     lienzo.alpha_composite(sombra, (pad, pad))
