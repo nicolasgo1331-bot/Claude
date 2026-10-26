@@ -1,0 +1,11 @@
+{
+  "marca": "Armaf", "nombre": "Odyssey Limoni", "genero": "Unisex", "concentracion": "Eau de Parfum",
+  "notas": {"salida": ["Limón", "Té", "Naranja"], "corazon": ["Bergamota", "Mandarina"], "fondo": ["Azahar"]},
+  "acordes_principales": ["cítrico", "verde", "fresco"],
+  "notas_icono": ["Limón", "Té", "Naranja", "Bergamota", "Mandarina", "Azahar"],
+  "duracion_horas": 5, "duracion_texto": "Moderada", "ocasion": "Diario / Casual",
+  "iconos_ocasion": ["sol", "copas", "coctel"], "temporada": "Primavera / Verano",
+  "inspirado_en": "Louis Vuitton Afternoon Swim",
+  "direccion_arte": {"superficie": "roca húmeda con musgo y gotas de agua", "fondo": "jardín de cítricos verde oscuro con hojas de té, azahar y frutas con rocío", "paleta": "verdes profundos, amarillo limón y naranja", "luz": "luz natural suave de mañana con luz de borde", "elementos": ["rodajas de limón", "mandarina", "naranja", "flores de azahar", "hojas de té"]},
+  "dudas": ["Datos tomados de tu ejemplo; confirmá duración y notas en Fragantica."]
+}
