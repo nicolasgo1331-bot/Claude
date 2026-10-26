@@ -1,0 +1,11 @@
+{
+  "marca": "Maison Alhambra", "nombre": "Jean Lowe Azure", "genero": "Unisex", "concentracion": "Eau de Parfum",
+  "notas": {"salida": ["Bergamota", "Mandarina"], "corazon": ["Naranja"], "fondo": ["Ámbar gris", "Jengibre"]},
+  "acordes_principales": ["cítrico", "acuático", "fresco", "ambarado"],
+  "notas_icono": ["Bergamota", "Mandarina", "Naranja", "Jengibre", "Ámbar gris"],
+  "duracion_horas": 5, "duracion_texto": "Moderada", "ocasion": "Diario / Casual",
+  "iconos_ocasion": ["sol", "copas", "coctel"], "temporada": "Primavera / Verano",
+  "inspirado_en": "Louis Vuitton Afternoon Swim",
+  "direccion_arte": {"superficie": "plataforma de piedra caliza clara y húmeda al borde del mar, con agua cristalina y salpicaduras", "fondo": "costa mediterránea azul intenso con horizonte marino desenfocado y cielo limpio", "paleta": "azules profundos y celestes, blanco, destellos de naranja y dorado", "luz": "luz natural brillante de mediodía con luz de borde y reflejos del agua", "elementos": ["naranjas y mandarinas con gotas de agua", "bergamota", "raíz de jengibre", "trozo de ámbar gris"]},
+  "dudas": ["Las fuentes (Basenotes, Parfumo, tiendas) discrepan en la pirámide; use la coincidente de Basenotes/Parfumo. Fragantica no aparecía en la búsqueda: confirmá notas ahí.", "Duración: reseñas entre 4 y 7 hs; se usó 5 hs.", "Ámbar gris es difícil de fotografiar; el ícono puede salir genérico."]
+}
