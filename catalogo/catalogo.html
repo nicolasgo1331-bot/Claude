@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>SDV Servicios Inmobiliarios — Catálogo</title>
+<style>
+@font-face{font-family:"Cormorant";font-weight:500;src:url(fonts/cormorant-garamond-latin-500-normal.woff2)}
+@font-face{font-family:"Cormorant";font-weight:600;src:url(fonts/cormorant-garamond-latin-600-normal.woff2)}
+@font-face{font-family:"Cormorant";font-weight:500;font-style:italic;src:url(fonts/cormorant-garamond-latin-500-italic.woff2)}
+:root{--purple:#A04880;--purple-d:#7E3566;--gray:#505050;--mute:#8A8A8A;--line:#E6DCE2;--tint:#F7F2F6}
+@page{size:210mm 297mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:"Inter",sans-serif;color:var(--gray);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;background:#fff}
+.page:last-child{page-break-after:auto}
+.serif{font-family:"Cormorant",serif}
+.eyebrow{font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:500}
+
+/* PORTADA */
+.cover .top{position:absolute;inset:0 0 110mm 0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding-top:6mm}
+.cover .logo{width:78mm}
+.cover .rule{width:14mm;height:.4mm;background:var(--purple);margin:13mm 0 9mm}
+.cover h1{font-family:"Cormorant",serif;font-weight:500;font-size:40pt;line-height:1.05;color:var(--gray);letter-spacing:.01em}
+.cover h1 em{color:var(--purple);font-style:italic}
+.cover .sub{margin-top:7mm}
+.cover .photo{position:absolute;left:0;right:0;bottom:0;height:110mm;background:url(img/t1-b.jpg) 50% 78%/cover}
+.cover .photo::after{content:"";position:absolute;left:0;right:0;top:0;height:1.6mm;background:var(--purple)}
+.cover .edition{position:absolute;left:16mm;bottom:10mm;color:#fff;font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;font-weight:500;text-shadow:0 0 8px rgba(0,0,0,.35)}
+
+/* FICHA */
+.hero{position:absolute;left:0;right:0;top:0;height:128mm;background:url(img/t1-a.jpg) 50% 72%/cover}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:var(--purple)}
+.badge{position:absolute;left:16mm;top:13mm;width:20mm;height:20mm;border-radius:50%;background:#fff;box-shadow:0 1px 10px rgba(0,0,0,.18)}
+.badge img{width:100%;height:100%;display:block}
+.tag{position:absolute;right:16mm;top:16mm;background:#fff;padding:2.2mm 4.5mm;font-size:7pt;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:600}
+.body{position:absolute;left:16mm;right:16mm;top:138mm;display:grid;grid-template-columns:1fr 58mm;column-gap:14mm}
+.body h2{font-family:"Cormorant",serif;font-weight:500;font-size:29pt;line-height:1.05;color:var(--gray);margin:2.5mm 0 3mm}
+.loc{font-size:9pt;color:var(--mute);letter-spacing:.04em}
+.desc{margin-top:6mm;font-size:9pt;line-height:1.65;color:#5f5f5f}
+.feat{margin-top:6mm;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2.6mm 6mm}
+.feat li{font-size:8.5pt;display:flex;align-items:center;gap:2.6mm}
+.feat li::before{content:"";width:1.8mm;height:1.8mm;border-radius:50%;background:var(--purple);flex:none}
+.side{border-left:.3mm solid var(--line);padding-left:9mm}
+.side .k{font-size:6.8pt;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);font-weight:500}
+.side .v{font-family:"Inter",sans-serif;font-weight:500;letter-spacing:-.01em;font-size:21pt;line-height:1.1;color:var(--purple);margin:1.5mm 0 6mm}
+.side .v small{font-size:11pt;font-weight:500;letter-spacing:.05em;color:var(--gray);margin-right:1.5mm}
+.side .v.dark{color:var(--gray)}
+.side .v.dark small{color:var(--mute);font-size:12pt;margin:0 0 0 1.2mm}
+.gal{position:absolute;left:16mm;right:16mm;top:226mm;height:44mm;display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.gal div{background-size:cover;background-position:50% 70%}
+.foot{position:absolute;left:16mm;right:16mm;bottom:9mm;display:flex;align-items:center;justify-content:space-between;border-top:.3mm solid var(--line);padding-top:4mm;font-size:7pt;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.foot img{height:8mm;display:block}
+.foot b{color:var(--gray);font-weight:600}
+
+/* CONTRATAPA */
+.back{background:var(--purple);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.back .badge2{width:46mm;height:46mm;border-radius:50%;background:#fff;margin-bottom:16mm}
+.back .badge2 img{width:100%;height:100%;display:block}
+.back h3{font-family:"Cormorant",serif;font-weight:500;font-size:30pt;line-height:1.15}
+.back h3 em{font-style:italic}
+.back .rule{width:14mm;height:.4mm;background:#fff;opacity:.7;margin:10mm 0 9mm}
+.back .row{font-size:9pt;letter-spacing:.2em;text-transform:uppercase;font-weight:500;margin:2mm 0}
+.back .row.big{font-size:20pt;letter-spacing:.06em;text-transform:none;font-weight:500}
+.back .small{position:absolute;bottom:12mm;font-size:7pt;letter-spacing:.28em;text-transform:uppercase;opacity:.75}
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<section class="page cover">
+  <div class="top">
+    <img class="logo" src="img/logo.png" alt="SDV Servicios Inmobiliarios">
+    <div class="rule"></div>
+    <h1>Terrenos <em>&amp;</em><br>Propiedades</h1>
+    <div class="eyebrow sub">Catálogo de venta · 2026</div>
+  </div>
+  <div class="photo"></div>
+</section>
+
+<!-- FICHA 01 -->
+<section class="page">
+  <div class="hero"></div>
+  <div class="badge"><img src="img/logo.png" alt=""></div>
+  <div class="tag">Terreno · 01</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Lote sobre Carril Norte</h2>
+      <div class="loc">A metros de Montecaseros</div>
+      <p class="desc">Una excelente oportunidad para invertir o construir. Lote con frente cerrado, servicios de luz y agua, y fácil acceso, en una zona en crecimiento. Ideal para proyectar tu vivienda o como inversión a futuro.</p>
+      <ul class="feat">
+        <li>Frente con cierre</li>
+        <li>Servicio de luz</li>
+        <li>Servicio de agua</li>
+        <li>Buena ubicación y fácil acceso</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>60.000</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">1.160<small>m²</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t1-b.jpg)"></div>
+    <div style="background-image:url(img/t1-c.jpg);background-position:50% 85%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo.png" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>01</span>
+  </div>
+</section>
+
+<!-- CONTRATAPA -->
+<section class="page back">
+  <div class="badge2"><img src="img/logo.png" alt=""></div>
+  <h3>Encontrá el lugar ideal<br><em>para tu próximo proyecto</em></h3>
+  <div class="rule"></div>
+  <div class="row">Consultanos y coordiná una visita</div>
+  <div class="row big">263 4221899</div>
+  <div class="small">SDV Servicios Inmobiliarios</div>
+</section>
+
+</body>
+</html>
