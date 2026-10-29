@@ -17,15 +17,14 @@ html,body{font-family:"Inter",sans-serif;color:var(--gray);-webkit-print-color-a
 .eyebrow{font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:500}
 
 /* PORTADA */
-.cover .top{position:absolute;inset:0 0 110mm 0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding-top:6mm}
-.cover .logo{width:78mm}
-.cover .rule{width:14mm;height:.4mm;background:var(--purple);margin:13mm 0 9mm}
-.cover h1{font-family:"Cormorant",serif;font-weight:500;font-size:40pt;line-height:1.05;color:var(--gray);letter-spacing:.01em}
+.cover .photo{position:absolute;left:0;right:0;top:0;height:218mm;background:url(img/t6-a.jpg) 50% 30%/cover}
+.cover .photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:var(--purple)}
+.cover .badge{left:50%;top:218mm;width:46mm;height:46mm;margin:-23mm 0 0 -23mm;box-shadow:0 2px 14px rgba(0,0,0,.18)}
+.cover .txt{position:absolute;left:0;right:0;top:252mm;text-align:center}
+.cover h1{font-family:"Cormorant",serif;font-weight:500;font-size:34pt;line-height:1.05;color:var(--gray);letter-spacing:.01em}
 .cover h1 em{color:var(--purple);font-style:italic}
-.cover .sub{margin-top:7mm}
-.cover .photo{position:absolute;left:0;right:0;bottom:0;height:110mm;background:url(img/t1-b.jpg) 50% 78%/cover}
-.cover .photo::after{content:"";position:absolute;left:0;right:0;top:0;height:1.6mm;background:var(--purple)}
-.cover .edition{position:absolute;left:16mm;bottom:10mm;color:#fff;font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;font-weight:500;text-shadow:0 0 8px rgba(0,0,0,.35)}
+.cover .sub{margin-top:5mm}
+.cover .bar{position:absolute;left:0;right:0;bottom:0;height:6mm;background:var(--purple)}
 
 /* FICHA */
 .hero{position:absolute;left:0;right:0;top:0;height:128mm;background:url(img/t1-a.jpg) 50% 72%/cover}
@@ -60,28 +59,34 @@ html,body{font-family:"Inter",sans-serif;color:var(--gray);-webkit-print-color-a
 .foot b{color:var(--gray);font-weight:600}
 
 /* CONTRATAPA */
-.back{background:var(--purple);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.back .badge2{width:46mm;height:46mm;border-radius:50%;background:#fff;margin-bottom:16mm}
+.back .strip{position:absolute;left:0;right:0;top:0;height:128mm;background:url(img/t1-a.jpg) 50% 60%/cover}
+.back .strip::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:var(--purple)}
+.back .badge2{position:absolute;left:50%;top:128mm;width:40mm;height:40mm;margin:-20mm 0 0 -20mm;border-radius:50%;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.18)}
 .back .badge2 img{width:100%;height:100%;display:block}
-.back h3{font-family:"Cormorant",serif;font-weight:500;font-size:30pt;line-height:1.15}
-.back h3 em{font-style:italic}
-.back .rule{width:14mm;height:.4mm;background:#fff;opacity:.7;margin:10mm 0 9mm}
-.back .row{font-size:9pt;letter-spacing:.2em;text-transform:uppercase;font-weight:500;margin:2mm 0}
-.back .row.big{font-size:20pt;letter-spacing:.06em;text-transform:none;font-weight:500}
-.back .small{position:absolute;bottom:12mm;font-size:7pt;letter-spacing:.28em;text-transform:uppercase;opacity:.75}
+.back .mid{position:absolute;left:0;right:0;top:158mm;text-align:center}
+.back h3{font-family:"Cormorant",serif;font-weight:500;font-size:28pt;line-height:1.15;color:var(--gray)}
+.back h3 em{font-style:italic;color:var(--purple)}
+.back .rule{width:14mm;height:.4mm;background:var(--purple);margin:7mm auto}
+.back .cta{font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:600}
+.back .cols{display:grid;grid-template-columns:1fr 1fr 1fr;margin:11mm 22mm 0;text-align:center}
+.back .cols>div{padding:0 4mm}
+.back .cols>div+div{border-left:.3mm solid var(--line)}
+.back .k{font-size:6.5pt;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:2.5mm}
+.back .v{font-size:11pt;color:var(--gray);font-weight:500;line-height:1.4}
+.back .bar{position:absolute;left:0;right:0;bottom:0;height:10mm;background:var(--purple);color:#fff;display:flex;align-items:center;justify-content:center;font-size:7pt;letter-spacing:.3em;text-transform:uppercase}
 </style>
 </head>
 <body>
 
 <!-- PORTADA -->
 <section class="page cover">
-  <div class="top">
-    <img class="logo" src="img/logo.png" alt="SDV Servicios Inmobiliarios">
-    <div class="rule"></div>
-    <h1>Terrenos <em>&amp;</em><br>Propiedades</h1>
+  <div class="photo"></div>
+  <div class="badge"><img src="img/logo.png" alt="SDV Servicios Inmobiliarios"></div>
+  <div class="txt">
+    <h1>Terrenos <em>&amp;</em> Propiedades</h1>
     <div class="eyebrow sub">Catálogo de venta · 2026</div>
   </div>
-  <div class="photo"></div>
+  <div class="bar"></div>
 </section>
 
 <!-- FICHA 01 -->
@@ -406,14 +411,19 @@ html,body{font-family:"Inter",sans-serif;color:var(--gray);-webkit-print-color-a
 
 <!-- CONTRATAPA -->
 <section class="page back">
+  <div class="strip"></div>
   <div class="badge2"><img src="img/logo.png" alt=""></div>
-  <h3>Encontrá el lugar ideal<br><em>para tu próximo proyecto</em></h3>
-  <div class="rule"></div>
-  <div class="row">Consultanos y coordiná una visita</div>
-  <div class="row big">263 4221899</div>
-  <div class="row">@sdv_inmobiliaria20</div>
-  <div class="row" style="opacity:.8;font-size:7.5pt">Lunes a viernes de 9:00 a 19:00 hs</div>
-  <div class="small">SDV Servicios Inmobiliarios</div>
+  <div class="mid">
+    <h3>Encontrá el lugar ideal<br><em>para tu próximo proyecto</em></h3>
+    <div class="rule"></div>
+    <div class="cta">Consultanos y coordiná una visita</div>
+    <div class="cols">
+      <div><div class="k">Teléfono</div><div class="v">263 4221899</div></div>
+      <div><div class="k">Instagram</div><div class="v">@sdv_inmobiliaria20</div></div>
+      <div><div class="k">Horario</div><div class="v">Lunes a viernes<br>9:00 a 19:00 hs</div></div>
+    </div>
+  </div>
+  <div class="bar">SDV Servicios Inmobiliarios</div>
 </section>
 
 </body>
