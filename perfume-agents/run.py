@@ -30,7 +30,7 @@ def main(argv=None, llm=None):
     p.add_argument("--render", type=int, help="número de idea a renderizar")
     a = ap.parse_args(argv)
 
-    if llm is None:
+    if llm is None and a.cmd not in ("prompts", "aprobar"):
         from agentes.gemini import Gemini
         llm = Gemini()
 

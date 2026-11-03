@@ -1,0 +1,11 @@
+{
+  "marca": "Armaf", "nombre": "Odyssey Aqua", "genero": "Masculino", "concentracion": "Eau de Parfum",
+  "notas": {"salida": ["Naranja", "Pomelo", "Artemisa"], "corazon": ["Menta", "Lavanda"], "fondo": ["Ambroxan", "Pachulí", "Ciprés"]},
+  "acordes_principales": ["acuático", "fresco", "aromático", "verde"],
+  "notas_icono": ["Naranja", "Pomelo", "Menta", "Lavanda", "Pachulí", "Ciprés"],
+  "duracion_horas": 6, "duracion_texto": "Moderada", "ocasion": "Diario / Casual",
+  "iconos_ocasion": ["sol", "copas", "coctel"], "temporada": "Primavera / Verano",
+  "inspirado_en": null,
+  "direccion_arte": {"superficie": "losa de pizarra oscura y húmeda con pequeñas pozas de agua cristalina", "fondo": "lago de montaña aguamarina entre neblina suave y bosque de cipreses desenfocado", "paleta": "aguamarina, verde menta, champagne y destellos rosados y naranjas", "luz": "luz fría de mañana con luz de borde y brillos de agua", "elementos": ["rodajas de pomelo y naranja con gotas", "ramas de menta fresca", "lavanda", "ramas de ciprés", "gotas de agua"]},
+  "dudas": ["Fragantica no apareció en la búsqueda; notas tomadas de fichas de tiendas y Parfumo (coinciden entre sí). Un anuncio de AliExpress lista notas distintas; ignorado.", "Género: la mayoría de tiendas lo listan para hombre (alguna lo marca unisex): confirmalo en Fragantica.", "Duración: sin mediciones independientes; las tiendas dicen 5-6 hs, Parfumo la puntúa 8/10. Se usó 6 hs.", "Inspirado en: no hay confirmación oficial. Un vendedor y un reseñador lo comparan con Invictus Platinum; se dejó vacío, decidí si lo querés poner.", "Ambroxan no se puede fotografiar, por eso no está entre los 6 íconos."]
+}
