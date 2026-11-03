@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>SDV Servicios Inmobiliarios — Catálogo</title>
+<style>
+@font-face{font-family:"Cormorant";font-weight:500;src:url(fonts/cormorant-garamond-latin-500-normal.woff2)}
+@font-face{font-family:"Cormorant";font-weight:600;src:url(fonts/cormorant-garamond-latin-600-normal.woff2)}
+@font-face{font-family:"Cormorant";font-weight:500;font-style:italic;src:url(fonts/cormorant-garamond-latin-500-italic.woff2)}
+:root{--purple:#A04880;--purple-d:#7E3566;--gray:#505050;--mute:#8A8A8A;--line:#E6DCE2;--tint:#F7F2F6}
+@page{size:210mm 297mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:"Inter",sans-serif;color:var(--gray);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;background:#fff}
+.page:last-child{page-break-after:auto}
+.serif{font-family:"Cormorant",serif}
+.eyebrow{font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:500}
+
+/* PORTADA */
+.cover .photo{position:absolute;left:0;right:0;top:0;height:218mm;background:url(img/t6-a.jpg) 50% 30%/cover}
+.cover .photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:var(--purple)}
+.cover .badge{left:50%;top:218mm;width:46mm;height:46mm;margin:-23mm 0 0 -23mm}
+.cover .txt{position:absolute;left:0;right:0;top:252mm;text-align:center}
+.cover h1{font-family:"Cormorant",serif;font-weight:500;font-size:34pt;line-height:1.05;color:var(--gray);letter-spacing:.01em}
+.cover h1 em{color:var(--purple);font-style:italic}
+.cover .sub{margin-top:5mm}
+.cover .bar{position:absolute;left:0;right:0;bottom:0;height:6mm;background:var(--purple)}
+
+/* FICHA */
+.hero{position:absolute;left:0;right:0;top:0;height:128mm;background:url(img/t1-a.jpg) 50% 72%/cover}
+.hero.h8{background-image:url(img/t8-a.jpg);background-position:50% 64%}
+.hero.h7{background-image:url(img/t7-a.jpg);background-position:50% 8%}
+.hero.h6{background-image:url(img/t6-a.jpg);background-position:50% 70%}
+.hero.h5{background-image:url(img/t5-a.jpg);background-position:50% 22%}
+.hero.h4{background-image:url(img/t4-a.jpg);background-position:50% 0%}
+.hero.h3{background-image:url(img/t3-a.jpg);background-position:50% 22%}
+.hero.h2{background-image:url(img/t2-a.jpg);background-position:50% 60%}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:var(--purple)}
+.badge{position:absolute;left:16mm;top:13mm;width:20mm;height:20mm;border-radius:50%;background:#fff}
+.badge img{width:100%;height:100%;display:block;border-radius:50%}
+.tag{position:absolute;right:16mm;top:16mm;background:#fff;padding:2.2mm 4.5mm;font-size:7pt;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:600}
+.body{position:absolute;left:16mm;right:16mm;top:138mm;display:grid;grid-template-columns:1fr 58mm;column-gap:14mm}
+.body h2{font-family:"Cormorant",serif;font-weight:500;font-size:29pt;line-height:1.05;color:var(--gray);margin:2.5mm 0 3mm}
+.loc{font-size:9pt;color:var(--mute);letter-spacing:.04em}
+.desc{margin-top:6mm;font-size:9pt;line-height:1.65;color:#5f5f5f}
+.feat{margin-top:6mm;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2.6mm 6mm}
+.feat li{font-size:8.5pt;display:flex;align-items:center;gap:2.6mm}
+.feat li::before{content:"";width:1.8mm;height:1.8mm;border-radius:50%;background:var(--purple);flex:none}
+.side{border-left:.3mm solid var(--line);padding-left:9mm}
+.side .k{font-size:6.8pt;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);font-weight:500}
+.side .v{font-family:"Inter",sans-serif;font-weight:500;letter-spacing:-.01em;font-size:21pt;line-height:1.1;color:var(--purple);margin:1.5mm 0 6mm}
+.side .v small{font-size:11pt;font-weight:500;letter-spacing:.05em;color:var(--gray);margin-right:1.5mm}
+.side .v.dark{color:var(--gray)}
+.side .v.dark small{color:var(--mute);font-size:12pt;margin:0 0 0 1.2mm}
+.gal{position:absolute;left:16mm;right:16mm;top:226mm;height:44mm;display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.gal div{background-size:cover;background-position:50% 70%}
+.foot{position:absolute;left:16mm;right:16mm;bottom:9mm;display:flex;align-items:center;justify-content:space-between;border-top:.3mm solid var(--line);padding-top:4mm;font-size:7pt;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.foot img{height:8mm;display:block}
+.foot b{color:var(--gray);font-weight:600}
+
+/* CONTRATAPA */
+.back .strip{position:absolute;left:0;right:0;top:0;height:128mm;background:url(img/t1-a.jpg) 50% 60%/cover}
+.back .strip::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:var(--purple)}
+.back .badge2{position:absolute;left:50%;top:128mm;width:40mm;height:40mm;margin:-20mm 0 0 -20mm;border-radius:50%;background:#fff}
+.back .badge2 img{width:100%;height:100%;display:block;border-radius:50%}
+.back .mid{position:absolute;left:0;right:0;top:158mm;text-align:center}
+.back h3{font-family:"Cormorant",serif;font-weight:500;font-size:28pt;line-height:1.15;color:var(--gray)}
+.back h3 em{font-style:italic;color:var(--purple)}
+.back .rule{width:14mm;height:.4mm;background:var(--purple);margin:7mm auto}
+.back .cta{font-size:7.5pt;letter-spacing:.28em;text-transform:uppercase;color:var(--purple);font-weight:600}
+.back .cols{display:grid;grid-template-columns:1fr 1fr 1fr;margin:11mm 22mm 0;text-align:center}
+.back .cols>div{padding:0 4mm}
+.back .cols>div+div{border-left:.3mm solid var(--line)}
+.back .k{font-size:6.5pt;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);font-weight:500;margin-bottom:2.5mm}
+.back .v{font-size:11pt;color:var(--gray);font-weight:500;line-height:1.4}
+.back .bar{position:absolute;left:0;right:0;bottom:0;height:10mm;background:var(--purple);color:#fff;display:flex;align-items:center;justify-content:center;font-size:7pt;letter-spacing:.3em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<section class="page cover">
+  <div class="photo"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt="SDV Servicios Inmobiliarios"></div>
+  <div class="txt">
+    <h1>Terrenos <em>&amp;</em> Propiedades</h1>
+    <div class="eyebrow sub">Catálogo de venta · 2026</div>
+  </div>
+  <div class="bar"></div>
+</section>
+
+<!-- FICHA 01 -->
+<section class="page">
+  <div class="hero"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Terreno · 01</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Lote sobre Carril Norte</h2>
+      <div class="loc">A metros de Montecaseros</div>
+      <p class="desc">Una excelente oportunidad para invertir o construir. Lote con frente cerrado, servicios de luz y agua, y fácil acceso, en una zona en crecimiento. Ideal para proyectar tu vivienda o como inversión a futuro.</p>
+      <ul class="feat">
+        <li>Frente con cierre</li>
+        <li>Servicio de luz</li>
+        <li>Servicio de agua</li>
+        <li>Buena ubicación y fácil acceso</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>60.000</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">1.160<small>m²</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t1-b.jpg)"></div>
+    <div style="background-image:url(img/t1-c.jpg);background-position:50% 85%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>01</span>
+  </div>
+</section>
+
+<!-- FICHA 02 -->
+<section class="page">
+  <div class="hero h2"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Fracción · 02</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Fracción sobre Calle Fernández</h2>
+      <div class="loc">Ciudad de San Martín, Mendoza</div>
+      <p class="desc">Excelente fracción de terreno con ubicación estratégica y acceso por Calle Fernández. Ideal para un proyecto residencial, una inversión o un desarrollo inmobiliario. Consultanos por documentación y condiciones de venta.</p>
+      <ul class="feat">
+        <li>Acceso por Calle Fernández</li>
+        <li>Ubicación estratégica</li>
+        <li>Proyecto residencial</li>
+        <li>Inversión o desarrollo</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>120.000</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">1.217<small>m²</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t2-b.jpg);background-position:50% 62%"></div>
+    <div style="background-image:url(img/t2-c.jpg);background-position:50% 55%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>02</span>
+  </div>
+</section>
+
+<!-- FICHA 03 -->
+<section class="page">
+  <div class="hero h3"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Terreno · 03</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Lote sobre Calle 9 de Julio</h2>
+      <div class="loc">Junín, Mendoza</div>
+      <p class="desc">Una excelente oportunidad para quienes buscan un terreno amplio, con muy buena ubicación y posibilidades para desarrollar su proyecto. 1.000 m² para construir, invertir y proyectar.</p>
+      <ul class="feat">
+        <li>Frente a calle</li>
+        <li>Servicios en puerta</li>
+        <li>Terreno amplio</li>
+        <li>Muy buena ubicación</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>60.000</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">1.000<small>m²</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t3-b.jpg);background-position:50% 28%"></div>
+    <div style="background-image:url(img/t3-c.jpg);background-position:50% 25%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>03</span>
+  </div>
+</section>
+
+<!-- FICHA 04 -->
+<section class="page">
+  <div class="hero h4"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Terreno · 04</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Lote en Barrio Pinar del Este</h2>
+      <div class="loc">San Martín, Mendoza</div>
+      <p class="desc">Una excelente ubicación para invertir. Ideal para construir tu hogar o invertir en una zona de crecimiento, con tranquilidad, seguridad y cercanía al centro de San Martín.</p>
+      <ul class="feat">
+        <li>Barrio privado con seguridad</li>
+        <li>Servicios subterráneos</li>
+        <li>Todos los servicios</li>
+        <li>Acceso asfaltado</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>64.900</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">882<small>m²</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t4-b.jpg);background-position:50% 60%"></div>
+    <div style="background-image:url(img/t4-c.jpg);background-position:50% 93%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>04</span>
+  </div>
+</section>
+
+<!-- FICHA 05 -->
+<section class="page">
+  <div class="hero h5"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Lote esquina · 05</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Lote esquina en Videla Castillo</h2>
+      <div class="loc">Barrio cerrado</div>
+      <p class="desc">Lote esquina en barrio cerrado, ideal para construir tu hogar. Tu proyecto comienza acá.</p>
+      <ul class="feat">
+        <li>Lote esquina</li>
+        <li>Barrio cerrado</li>
+        <li>Medidas 34,53 × 11,30 m</li>
+        <li>Ideal para tu hogar</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>17.000</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">387,55<small>m²</small></div>
+      <div class="k">Medidas</div>
+      <div class="v dark" style="font-size:16pt;white-space:nowrap">34,53 × 11,30<small>m</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t5-b.jpg);background-position:50% 60%"></div>
+    <div style="background-image:url(img/t5-c.jpg);background-position:50% 30%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>05</span>
+  </div>
+</section>
+
+<!-- FICHA 06 -->
+<section class="page">
+  <div class="hero h6"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Terreno · 06</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Terreno regular en zona residencial</h2>
+      <div class="loc">Zona Padre Migone</div>
+      <p class="desc">Terreno regular en una zona residencial de entorno muy agradable. Listo para escriturar e ideal para construir tu hogar.</p>
+      <ul class="feat">
+        <li>Terreno regular</li>
+        <li>Servicios en puerta</li>
+        <li>Listo para escriturar</li>
+        <li>Zona residencial</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>48.000</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">1.023<small>m²</small></div>
+      <div class="k">Medidas · frente × fondo</div>
+      <div class="v dark" style="font-size:16pt;white-space:nowrap">45,88 × 22,50<small>m</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t6-b.jpg);background-position:50% 55%"></div>
+    <div style="background-image:url(img/t6-c.jpg);background-position:50% 59%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>06</span>
+  </div>
+</section>
+
+<!-- FICHA 07 -->
+<section class="page">
+  <div class="hero h7"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Terreno · 07</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Terreno sobre Calle Carbajal</h2>
+      <div class="loc">Casi Carril Isidoro Busquets</div>
+      <p class="desc">Terreno sobre Calle Carbajal, casi Isidoro Busquets. Una opción accesible para proyectar tu vivienda o invertir.</p>
+      <ul class="feat">
+        <li>Frente a Calle Carbajal</li>
+        <li>Superficie libre 308,56 m²</li>
+        <li>Medidas 10,49 × 32,83 m</li>
+        <li>Cerca de Carril Busquets</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio</div>
+      <div class="v"><small>USD</small>9.000</div>
+      <div class="k">Superficie</div>
+      <div class="v dark">340,07<small>m²</small></div>
+      <div class="k">Medidas · frente × fondo</div>
+      <div class="v dark" style="font-size:16pt;white-space:nowrap">10,49 × 32,83<small>m</small></div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t7-b.jpg);background-position:50% 47%"></div>
+    <div style="background-image:url(img/t7-c.jpg);background-size:contain;background-repeat:no-repeat;background-position:50% 50%;background-color:#fff;outline:.3mm solid var(--line);outline-offset:-.3mm"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>07</span>
+  </div>
+</section>
+
+<!-- FICHA 08 -->
+<section class="page">
+  <div class="hero h8"></div>
+  <div class="badge"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="tag">Lotes · 08</div>
+
+  <div class="body">
+    <div>
+      <div class="eyebrow">En venta</div>
+      <h2>Lotes en Barrio Pueblo Nuestro</h2>
+      <div class="loc">Lotes de 200 m²</div>
+      <p class="desc">Lotes en venta en Barrio Pueblo Nuestro, de 200 m² cada uno, con todos los servicios en puerta. Listos para transferir.</p>
+      <ul class="feat">
+        <li>Lotes de 200 m²</li>
+        <li>Todos los servicios en puerta</li>
+        <li>Listos para transferir</li>
+        <li>Tres valores a elegir</li>
+      </ul>
+    </div>
+    <div class="side">
+      <div class="k">Precio desde</div>
+      <div class="v"><small>USD</small>11.500</div>
+      <div class="k">Superficie por lote</div>
+      <div class="v dark">200<small>m²</small></div>
+      <div class="k">Valores disponibles</div>
+      <div class="v dark" style="font-size:13pt;line-height:1.5">USD 11.500<br>USD 12.500<br>USD 13.500</div>
+    </div>
+  </div>
+
+  <div class="gal">
+    <div style="background-image:url(img/t8-b.jpg);background-position:50% 64%"></div>
+    <div style="background-image:url(img/t8-c.jpg);background-position:50% 72%"></div>
+  </div>
+
+  <div class="foot">
+    <img src="img/logo-flat.jpg" alt="">
+    <span>Consultanos y coordiná una visita · <b>263 4221899</b></span>
+    <span>08</span>
+  </div>
+</section>
+
+<!-- CONTRATAPA -->
+<section class="page back">
+  <div class="strip"></div>
+  <div class="badge2"><img src="img/logo-flat.jpg" alt=""></div>
+  <div class="mid">
+    <h3>Encontrá el lugar ideal<br><em>para tu próximo proyecto</em></h3>
+    <div class="rule"></div>
+    <div class="cta">Consultanos y coordiná una visita</div>
+    <div class="cols">
+      <div><div class="k">Teléfono</div><div class="v">263 4221899</div></div>
+      <div><div class="k">Instagram</div><div class="v">@sdv_inmobiliaria20</div></div>
+      <div><div class="k">Horario</div><div class="v">Lunes a viernes<br>9:00 a 19:00 hs</div></div>
+    </div>
+  </div>
+  <div class="bar">SDV Servicios Inmobiliarios</div>
+</section>
+
+</body>
+</html>
