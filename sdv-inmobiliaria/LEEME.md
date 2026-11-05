@@ -37,3 +37,12 @@ Para salir, **Cerrar sesión** en la barra de edición.
 
 ## Datos de contacto
 Se cambian en `config.js` (`WA_NUMBER`, `PHONE_LABEL`, `ADDRESS`). El número de WhatsApp va sin `+` ni espacios: `54` + `9` + código de área + número.
+
+## Dominio propio
+1. Comprá el dominio (por ejemplo `sdvinmobiliaria.com`, en Namecheap, GoDaddy o Cloudflare). Para `.com.ar` se gestiona en nic.ar.
+2. En Vercel: **Settings > Domains > Add**, escribí el dominio y seguí las indicaciones. Vercel muestra los registros DNS exactos que hay que cargar en el sitio donde lo compraste (un registro A y un CNAME para `www`).
+3. Pasados unos minutos (a veces hasta unas horas) el dominio queda activo y Vercel agrega el certificado HTTPS solo.
+
+## Antes de entregar
+- Cambiar `ADMIN_PIN` es innecesario con Supabase conectado: el candado pide email y contraseña reales.
+- Probar desde el celular: filtros, WhatsApp, cargar una propiedad con fotos, editarla, pausarla y borrarla.
