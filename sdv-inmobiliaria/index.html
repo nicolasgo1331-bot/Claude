@@ -102,7 +102,8 @@ a { color: inherit; text-decoration: none; }
 
 /* Header */
 .site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: var(--glass); backdrop-filter: saturate(160%) blur(16px); -webkit-backdrop-filter: saturate(160%) blur(16px); border-bottom: 1px solid var(--line); }
-.hdr { display: flex; align-items: center; gap: 20px; height: 68px; }
+.hdr { display: flex; align-items: center; gap: 12px; height: 68px; }
+@media (min-width: 820px) { .hdr { gap: 16px; } }
 .brand { display: flex; align-items: center; gap: 12px; margin-right: auto; }
 .brand img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; background: #fff; }
 .brand-txt { display: none; line-height: 1.15; }
@@ -145,6 +146,8 @@ textarea.inp { height: auto; padding: 12px 14px; line-height: 1.55; resize: vert
 .inp:disabled { background: var(--surface); color: var(--muted); cursor: not-allowed; }
 .inp::placeholder { color: var(--muted); opacity: .7; }
 select.inp { appearance: none; -webkit-appearance: none; padding-right: 36px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%236C757D' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='m1 1.5 5 5 5-5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+.adv-toggle { display: none; }
+@media (max-width: 640px) { .adv-toggle { display: inline-flex; } .filters:not(.open) .adv, .filters:not(.open) #priceHint { display: none; } .filters { padding: 16px; } }
 .prange { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
 /* Catalog */
@@ -261,8 +264,8 @@ select.inp { appearance: none; -webkit-appearance: none; padding-right: 36px; ba
 .thumb.on { border-color: var(--brand); opacity: 1; }
 .thumb img { width: 100%; height: 100%; object-fit: cover; }
 .thumb .ph svg { width: 20px; height: 20px; }
-.info { padding: 28px 28px 32px; display: grid; gap: 22px; align-content: start; min-width: 0; }
-@media (max-width: 520px) { .info { padding: 22px 18px 100px; } }
+.info { --pad: 28px; padding: 28px var(--pad) 32px; display: grid; gap: 22px; align-content: start; min-width: 0; }
+@media (max-width: 520px) { .info { --pad: 18px; padding-top: 22px; padding-bottom: 0; } .info > :nth-last-child(2) { padding-bottom: 8px; } }
 .info .row-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; background: var(--brand); color: var(--on-brand); }
 .pill.soft { background: var(--brand-soft); color: var(--brand-ink); }
@@ -285,7 +288,7 @@ select.inp { appearance: none; -webkit-appearance: none; padding-right: 36px; ba
 .desc { white-space: pre-line; color: var(--muted); font-size: 14.5px; line-height: 1.7; }
 .wa-bar { display: grid; grid-template-columns: minmax(0, 1fr) 50px; gap: 8px; }
 .btn.share { width: 50px; height: 50px; padding: 0; }
-@media (max-width: 899px) { .wa-bar { position: fixed; z-index: 75; left: 0; right: 0; bottom: 0; padding: 12px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: var(--glass); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-top: 1px solid var(--line); } }
+@media (max-width: 899px) { .wa-bar { position: sticky; bottom: 0; z-index: 5; margin-inline: calc(var(--pad) * -1); padding: 12px var(--pad) calc(12px + env(safe-area-inset-bottom, 0px)); background: var(--card); border-top: 1px solid var(--line); } }
 @media (max-width: 640px) { .overlay.fullm { padding: 0; } .overlay.fullm .sheet { border-radius: 0; height: 100%; } }
 
 /* Drawer (form) */
@@ -336,7 +339,7 @@ legend { padding: 0; margin-bottom: 12px; font-size: 12px; font-weight: 700; let
 
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="ic-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol><symbol id="ic-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="ic-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></symbol><symbol id="ic-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol><symbol id="ic-image-plus" viewBox="0 0 24 24"><path d="M16 5h6" /> <path d="M19 2v6" /> <path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> <circle cx="9" cy="9" r="2" /></symbol><symbol id="ic-key-round" viewBox="0 0 24 24"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /> <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" /></symbol><symbol id="ic-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></symbol><symbol id="ic-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol><symbol id="ic-log-out" viewBox="0 0 24 24"><path d="m16 17 5-5-5-5" /> <path d="M21 12H9" /> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /></symbol><symbol id="ic-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol><symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" /></symbol><symbol id="ic-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></symbol><symbol id="ic-plus" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="M12 5v14" /></symbol><symbol id="ic-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34" /> <circle cx="11" cy="11" r="8" /></symbol><symbol id="ic-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></symbol><symbol id="ic-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol><symbol id="ic-building-2" viewBox="0 0 24 24"><path d="M10 12h4" /> <path d="M10 8h4" /> <path d="M14 21v-3a2 2 0 0 0-4 0v3" /> <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /> <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></symbol><symbol id="ic-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol><symbol id="ic-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol><symbol id="ic-eye-off" viewBox="0 0 24 24"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" /> <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" /> <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" /> <path d="m2 2 20 20" /></symbol><symbol id="ic-pencil" viewBox="0 0 24 24"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /> <path d="m15 5 4 4" /></symbol><symbol id="ic-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4" /> <path d="M3 11v-1a4 4 0 0 1 4-4h14" /> <path d="m7 22-4-4 4-4" /> <path d="M21 13v1a4 4 0 0 1-4 4H3" /></symbol><symbol id="ic-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol><symbol id="ic-trash-2" viewBox="0 0 24 24"><path d="M10 11v6" /> <path d="M14 11v6" /> <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" /> <path d="M3 6h18" /> <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></symbol><symbol id="ic-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /></symbol><symbol id="ic-minus" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol><symbol id="ic-bath" viewBox="0 0 24 24"><path d="M10 4 8 6" /> <path d="M17 19v2" /> <path d="M2 12h20" /> <path d="M7 19v2" /> <path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" /></symbol><symbol id="ic-bed-double" viewBox="0 0 24 24"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" /> <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" /> <path d="M12 4v6" /> <path d="M2 18h20" /></symbol><symbol id="ic-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /> <circle cx="7" cy="17" r="2" /> <path d="M9 17h6" /> <circle cx="17" cy="17" r="2" /></symbol><symbol id="ic-ruler" viewBox="0 0 24 24"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /> <path d="m14.5 12.5 2-2" /> <path d="m11.5 9.5 2-2" /> <path d="m8.5 6.5 2-2" /> <path d="m17.5 15.5 2-2" /></symbol><symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="ic-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol><symbol id="ic-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="ic-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></symbol><symbol id="ic-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol><symbol id="ic-image-plus" viewBox="0 0 24 24"><path d="M16 5h6" /> <path d="M19 2v6" /> <path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> <circle cx="9" cy="9" r="2" /></symbol><symbol id="ic-key-round" viewBox="0 0 24 24"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /> <circle cx="16.5" cy="7.5" r=".5" fill="currentColor" /></symbol><symbol id="ic-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></symbol><symbol id="ic-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /></symbol><symbol id="ic-log-out" viewBox="0 0 24 24"><path d="m16 17 5-5-5-5" /> <path d="M21 12H9" /> <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /></symbol><symbol id="ic-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol><symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" /></symbol><symbol id="ic-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></symbol><symbol id="ic-plus" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="M12 5v14" /></symbol><symbol id="ic-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34" /> <circle cx="11" cy="11" r="8" /></symbol><symbol id="ic-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></symbol><symbol id="ic-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol><symbol id="ic-building-2" viewBox="0 0 24 24"><path d="M10 12h4" /> <path d="M10 8h4" /> <path d="M14 21v-3a2 2 0 0 0-4 0v3" /> <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /> <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></symbol><symbol id="ic-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></symbol><symbol id="ic-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol><symbol id="ic-eye-off" viewBox="0 0 24 24"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" /> <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" /> <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" /> <path d="m2 2 20 20" /></symbol><symbol id="ic-pencil" viewBox="0 0 24 24"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /> <path d="m15 5 4 4" /></symbol><symbol id="ic-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4" /> <path d="M3 11v-1a4 4 0 0 1 4-4h14" /> <path d="m7 22-4-4 4-4" /> <path d="M21 13v1a4 4 0 0 1-4 4H3" /></symbol><symbol id="ic-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol><symbol id="ic-trash-2" viewBox="0 0 24 24"><path d="M10 11v6" /> <path d="M14 11v6" /> <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" /> <path d="M3 6h18" /> <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></symbol><symbol id="ic-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /></symbol><symbol id="ic-minus" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol><symbol id="ic-bath" viewBox="0 0 24 24"><path d="M10 4 8 6" /> <path d="M17 19v2" /> <path d="M2 12h20" /> <path d="M7 19v2" /> <path d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" /></symbol><symbol id="ic-bed-double" viewBox="0 0 24 24"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" /> <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" /> <path d="M12 4v6" /> <path d="M2 18h20" /></symbol><symbol id="ic-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /> <circle cx="7" cy="17" r="2" /> <path d="M9 17h6" /> <circle cx="17" cy="17" r="2" /></symbol><symbol id="ic-ruler" viewBox="0 0 24 24"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /> <path d="m14.5 12.5 2-2" /> <path d="m11.5 9.5 2-2" /> <path d="m8.5 6.5 2-2" /> <path d="m17.5 15.5 2-2" /></symbol><symbol id="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /></symbol><symbol id="ic-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></symbol><symbol id="ic-sliders-horizontal" viewBox="0 0 24 24"><path d="M10 5H3" /> <path d="M12 19H3" /> <path d="M14 3v4" /> <path d="M16 17v4" /> <path d="M21 12h-9" /> <path d="M21 19h-5" /> <path d="M21 5h-7" /> <path d="M8 10v4" /> <path d="M8 12H3" /></symbol><symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol></svg>
 <!-- ============ HEADER ============ -->
 <header class="site-header">
   <div class="wrap">
@@ -352,6 +355,7 @@ legend { padding: 0; margin-bottom: 12px; font-size: 12px; font-weight: 700; let
         <button type="button" data-nav="contacto">Contacto</button>
       </nav>
       <a class="btn btn-wa btn-wa-h" data-wa href="#" target="_blank" rel="noopener"><svg class="i wa" aria-hidden="true"><use href="#wa"></use></svg>WhatsApp</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar tema"><i data-lucide="moon" class="i i-lg"></i></button>
       <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false"><i data-lucide="menu" class="i i-lg"></i></button>
     </div>
     <div class="mnav" id="mnav" hidden>
@@ -395,7 +399,7 @@ legend { padding: 0; margin-bottom: 12px; font-size: 12px; font-weight: 700; let
       <button type="button" data-op="alquiler">Alquiler</button>
     </div>
     <div class="frow">
-      <div class="field"><label for="fType">Tipo de propiedad</label>
+      <div class="field adv"><label for="fType">Tipo de propiedad</label>
         <select class="inp" id="fType">
           <option value="">Todos los tipos</option>
           <option value="casa">Casa</option><option value="departamento">Departamento</option>
@@ -405,10 +409,11 @@ legend { padding: 0; margin-bottom: 12px; font-size: 12px; font-weight: 700; let
       <div class="field"><label for="fQ">Ubicación o barrio</label>
         <input class="inp" id="fQ" list="barrios" placeholder="Ej: Palmira, Chapanay">
         <datalist id="barrios"></datalist></div>
-      <div class="field"><label for="fCur">Moneda</label>
+      <div class="field adv"><label for="fCur">Moneda</label>
         <select class="inp" id="fCur"><option value="">Todas</option><option value="USD">USD</option><option value="ARS">ARS</option></select></div>
-      <div class="field"><label for="fMin">Precio</label>
+      <div class="field adv"><label for="fMin">Precio</label>
         <div class="prange"><input class="inp" id="fMin" inputmode="numeric" placeholder="Mínimo" disabled aria-label="Precio mínimo"><input class="inp" id="fMax" inputmode="numeric" placeholder="Máximo" disabled aria-label="Precio máximo"></div></div>
+      <button class="btn btn-ghost adv-toggle" type="button" id="advBtn" aria-expanded="false" aria-controls="filters"><i data-lucide="sliders-horizontal" class="i"></i><span>Más filtros</span></button>
       <button class="btn btn-primary" type="submit"><i data-lucide="search" class="i"></i>Buscar</button>
     </div>
     <p class="hint" id="priceHint">Elegí una moneda para filtrar por rango de precio.</p>
@@ -649,7 +654,7 @@ function canvasFrom(file, max = 1400) {
   });
 }
 function localStore() {
-  const KEY = 'sdv_props_v1'; let mem = null;
+  const KEY = 'sdv_props_v2'; let mem = null;
   const read = () => { if (mem) return mem; const raw = safeGet('localStorage', KEY); try { mem = raw ? JSON.parse(raw) : null; } catch (e) { mem = null; } if (!mem) { mem = SEED.map(x => ({ ...x })); write(); } return mem; };
   const write = () => safeSet('localStorage', KEY, JSON.stringify(mem));
   return {
@@ -793,15 +798,21 @@ function render() {
 }
 
 /* ---------- Navegación y filtros (eventos) ---------- */
+function announce() {
+  const n = filtered().length, op = state.filters.op;
+  toast(`${n} ${n === 1 ? 'propiedad' : 'propiedades'}${op === 'venta' ? ' en venta' : op === 'alquiler' ? ' en alquiler' : ''}`);
+}
+function toCatalog() { try { $('#catalogo').scrollIntoView({ behavior: 'smooth' }); } catch (e) { location.hash = 'catalogo'; } }
 function goTo(k) {
-  if (k === 'venta' || k === 'alquiler') { state.filters.op = k; render(); $('#catalogo').scrollIntoView({ behavior: 'smooth' }); }
+  if (k === 'venta' || k === 'alquiler') { state.filters.op = k; render(); announce(); toCatalog(); }
   else if (k === 'contacto') $('#contacto').scrollIntoView({ behavior: 'smooth' });
   else window.scrollTo({ top: 0, behavior: 'smooth' });
   $('#mnav').hidden = true; $('#menuBtn').setAttribute('aria-expanded', 'false');
 }
 document.addEventListener('click', e => { const n = e.target.closest('[data-nav]'); if (n) { e.preventDefault(); goTo(n.dataset.nav); } });
 $('#menuBtn').addEventListener('click', () => { const h = $('#mnav').hidden; $('#mnav').hidden = !h; $('#menuBtn').setAttribute('aria-expanded', String(h)); });
-$('#opSeg').addEventListener('click', e => { const b = e.target.closest('[data-op]'); if (!b) return; state.filters.op = b.dataset.op; render(); });
+$('#opSeg').addEventListener('click', e => { const b = e.target.closest('[data-op]'); if (!b) return; state.filters.op = b.dataset.op; render(); announce(); if (matchMedia('(max-width: 900px)').matches) toCatalog(); });
+$('#advBtn').addEventListener('click', () => { const f = $('#filters'); const o = f.classList.toggle('open'); $('#advBtn').setAttribute('aria-expanded', String(o)); $('#advBtn span').textContent = o ? 'Menos filtros' : 'Más filtros'; });
 $('#fType').addEventListener('change', e => { state.filters.type = e.target.value; render(); });
 $('#fQ').addEventListener('input', e => { state.filters.q = e.target.value; render(); });
 $('#fCur').addEventListener('change', e => {
@@ -812,7 +823,7 @@ $('#fCur').addEventListener('change', e => {
 });
 ['Min', 'Max'].forEach(k => $('#f' + k).addEventListener('input', e => { e.target.value = e.target.value.replace(/\D/g, ''); state.filters[k.toLowerCase()] = e.target.value; render(); }));
 $('#fSort').addEventListener('change', e => { state.sort = e.target.value; render(); });
-$('#filters').addEventListener('submit', e => { e.preventDefault(); $('#catalogo').scrollIntoView({ behavior: 'smooth' }); });
+$('#filters').addEventListener('submit', e => { e.preventDefault(); announce(); toCatalog(); });
 function clearFilters() {
   state.filters = { op: 'todos', type: '', q: '', cur: '', min: '', max: '' };
   $('#fType').value = ''; $('#fQ').value = ''; $('#fCur').value = ''; $('#fMin').value = $('#fMax').value = ''; $('#fMin').disabled = $('#fMax').disabled = true; $('#priceHint').hidden = false; render();
@@ -1017,6 +1028,17 @@ $('#pinForm').addEventListener('submit', async e => {
   else { F('pinErr').textContent = USE_SB ? 'Email o contraseña incorrectos.' : 'PIN incorrecto. Probá de nuevo.'; const s = $('#pinForm'); s.classList.remove('shake'); void s.offsetWidth; s.classList.add('shake'); F('pinInp').select(); }
 });
 $('#logoutBtn').addEventListener('click', async () => { await Auth.signOut(); state.admin = false; render(); toast('Sesión cerrada'); });
+
+/* ---------- Tema claro / oscuro ---------- */
+const root = document.documentElement;
+const effTheme = () => root.dataset.theme === 'dark' || root.dataset.theme === 'light' ? root.dataset.theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+function themeIcon() {
+  const dark = effTheme() === 'dark', b = $('#themeBtn');
+  b.innerHTML = ic(dark ? 'sun' : 'moon', 'i-lg'); b.setAttribute('aria-label', dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'); b.title = dark ? 'Modo claro' : 'Modo oscuro'; icons();
+}
+$('#themeBtn').addEventListener('click', () => { const next = effTheme() === 'dark' ? 'light' : 'dark'; root.dataset.theme = next; safeSet('localStorage', 'sdv_theme', next); themeIcon(); });
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', themeIcon); } catch (e) { }
+{ const saved = safeGet('localStorage', 'sdv_theme'); if (saved === 'dark' || saved === 'light') root.dataset.theme = saved; themeIcon(); }
 
 /* ---------- Inicio ---------- */
 async function init() {
