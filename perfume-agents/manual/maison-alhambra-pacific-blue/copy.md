@@ -38,3 +38,14 @@ Guardalo y mandanos DM para pedir el tuyo 📩 Perfumes originales, envíos a to
 #MaisonAlhambra #PacificBlue #NeroliPortofino #PerfumesArabes #PerfumesUnisex #AlternativaNicho #FragranceMP
 
 **Recomendación:** la 2 (cierra con pregunta para sumar comentarios y mantiene el CTA a DM). La 3 usa comparación de precio: úsala solo si querés ese ángulo, porque no afirma que sea idéntico, solo "inspirado en".
+
+## 4 (storytelling)
+Cerrá los ojos: arena tibia, mar turquesa y un aroma a limón recién cortado 🌴🍋
+
+Eso es Pacific Blue. Bergamota, limón y mandarina abren fresco, y el neroli con el jazmín lo dejan suave y elegante sobre la piel. Unisex, de estela moderada, ideal para usar de día.
+
+⏳ Unas 5 hs | ☀️ Primavera y verano | 💙 Inspirado en Tom Ford Neroli Portofino
+
+¿Cuál es tu perfume de verano? 👇 Pedí el tuyo por DM 📩 Originales, envíos a todo el país 🇦🇷
+
+#MaisonAlhambra #PacificBlue #PerfumesArabes #PerfumesUnisex #PerfumeCitrico #NeroliPortofino #PerfumesMendoza #FragranceMP
