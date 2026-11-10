@@ -1,0 +1,11 @@
+{
+  "marca": "Maison Alhambra", "nombre": "Pacific Blue", "genero": "Unisex", "concentracion": "Eau de Parfum",
+  "notas": {"salida": ["Bergamota", "Limón", "Mandarina"], "corazon": ["Lavanda", "Azahar", "Jazmín"], "fondo": ["Ámbar"]},
+  "acordes_principales": ["cítrico", "acuático", "floral", "aromático"],
+  "notas_icono": ["Bergamota", "Limón", "Mandarina", "Lavanda", "Azahar", "Ámbar"],
+  "duracion_horas": 6, "duracion_texto": "Moderada", "ocasion": "Diario / Casual",
+  "iconos_ocasion": ["sol", "copas", "coctel"], "temporada": "Primavera / Verano",
+  "inspirado_en": null,
+  "direccion_arte": {"superficie": "madera flotante blanqueada por el mar sobre arena clara y húmeda con espuma suave", "fondo": "laguna turquesa del Pacífico con palmeras y horizonte desenfocados y cielo cálido", "paleta": "turquesa, aguamarina, arena clara y dorado", "luz": "luz dorada de atardecer con luz de borde que haga brillar la tapa dorada y reflejos en el agua", "elementos": ["limones y mandarinas con gotas de agua", "bergamota", "ramas de lavanda", "flores de azahar", "trozo de ámbar", "pequeñas conchas"]},
+  "dudas": ["Las fuentes NO coinciden en la pirámide: unas listan neroli, bergamota, limón, mandarina, lavanda, flor de naranjo, jazmín y ámbar; otras agua de mar, menta, cedro y almizcle; otras ajenjo y notas herbales. Usé la mezcla más repetida (cítricos + lavanda + azahar/jazmín + ámbar). Pasame la pirámide de Fragantica o de tu proveedor y la corrijo.", "Duración: de 4 a 8 hs según la fuente; se usó 6 hs.", "Inspirado en: no encontré una inspiración confirmada; se dejó vacío.", "Género: varias tiendas lo listan unisex; confirmalo."]
+}

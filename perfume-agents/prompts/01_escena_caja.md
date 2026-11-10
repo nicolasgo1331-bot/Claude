@@ -1,4 +1,4 @@
-Fotografía comercial de producto de alta gama, formato cuadrado 1:1.
+Fotografía comercial de producto de alta gama, formato vertical 3:4 (más alto que ancho). Producto centrado en el tercio medio, con aire arriba y abajo.
 
 PRODUCTO (la imagen de referencia es la verdad absoluta):
 El perfume {{marca}} {{nombre}} y su caja a juego, exactamente como en la referencia: misma forma, proporciones, colores, materiales, tapa, tipografías, logos, patrones y textos impresos. No rediseñes, no simplifiques y no inventes ni cambies ninguna letra del empaque. Mantén la disposición de la referencia (frasco y caja uno junto al otro, la caja ligeramente detrás), ambos centrados como héroes de la imagen y a escala realista entre sí.

@@ -1,4 +1,4 @@
-Usa la imagen de la escena como base y rehaz exactamente la misma fotografía, pero SOLO con el frasco de perfume, centrado y sin su caja. Formato cuadrado 1:1.
+Usa la imagen de la escena como base y rehaz exactamente la misma fotografía, pero SOLO con el frasco de perfume, centrado y sin su caja. Formato vertical 3:4, el mismo encuadre vertical de la imagen de escena.
 
 - El frasco debe ser idéntico a la imagen de referencia del producto (forma, color, tapa, tipografías, logos y patrones). No cambies ninguna letra impresa.
 - Mantén igual: la superficie, el fondo, los elementos de las notas, la paleta, la luz y el nivel de desenfoque. No cambies la escena.
