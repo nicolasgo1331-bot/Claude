@@ -8,7 +8,7 @@ El perfume Maison Alhambra Pacific Blue y su caja a juego, exactamente como en l
 ESCENA:
 - Superficie: madera flotante blanqueada por el mar sobre arena clara y húmeda con espuma suave. Debe verse como una base real: textura, humedad o pulido natural, sombras de contacto y reflejos coherentes con el material.
 - Fondo: laguna turquesa del Pacífico con palmeras y horizonte desenfocados y cielo cálido. Natural, creíble y con profundidad (bokeh suave), pensado para que el perfume se sienta intenso.
-- Notas olfativas (cítrico, acuático, floral, aromático) integradas de forma artística y elegante alrededor y al fondo, con ligero desenfoque: limones y mandarinas con gotas de agua, bergamota, ramas de lavanda, flores de azahar, trozo de ámbar, pequeñas conchas. Nada tapa el frasco ni la caja.
+- Notas olfativas (cítrico, floral blanco, aromático, fresco especiado, fresco) integradas de forma artística y elegante alrededor y al fondo, con ligero desenfoque: limones y mandarinas con gotas de agua, bergamota, flores blancas de azahar y jazmín, pequeñas conchas. Nada tapa el frasco ni la caja.
 - Paleta: turquesa, aguamarina, arena clara y dorado.
 - Luz: luz dorada de atardecer con luz de borde que haga brillar la tapa dorada y reflejos en el agua. Iluminación de estudio cinematográfica, luz de borde que defina el contorno, reflejos creíbles.
 
@@ -33,19 +33,19 @@ Usa la imagen del frasco solo como base y crea una versión informativa, formato
 
 Superpón con diseño publicitario premium, limpio y minimalista:
 
-IZQUIERDA — columna vertical de 6 íconos circulares con borde dorado fino, apilados de forma limpia y a igual distancia. Cada ícono contiene una fotografía macro hiperrealista del ingrediente y debajo su nombre en mayúsculas doradas, en este orden exacto:
+IZQUIERDA — columna vertical de 5 íconos circulares con borde dorado fino, apilados de forma limpia y a igual distancia. Cada ícono contiene una fotografía macro hiperrealista del ingrediente y debajo su nombre en mayúsculas doradas, en este orden exacto:
 1. BERGAMOTA
 2. LIMÓN
 3. MANDARINA
-4. LAVANDA
-5. AZAHAR
-6. ÁMBAR
+4. NEROLI
+5. JAZMÍN
 
 DERECHA — panel de cristal translúcido flotante, angosto y pegado al borde derecho (glassmorphism sutil, bordes redondeados) con tipografía dorada moderna, muy legible. Contenido exacto, sin cambiar ni una letra:
 - Título: "PERFIL DE LA FRAGANCIA"
 - Ícono dorado minimalista + "GÉNERO" y debajo "UNISEX"
-- Ícono dorado minimalista + "DURACIÓN" y debajo "MODERADA (UNAS 6 HS)", con una barra de progreso dorada llena al 60%
+- Ícono dorado minimalista + "DURACIÓN" y debajo "MODERADA (UNAS 5 HS)", con una barra de progreso dorada llena al 50%
 - Ícono dorado minimalista + "OCASIÓN" y debajo "DIARIO / CASUAL", con pequeños íconos dorados: sol, copas, coctel
+- Último dato, separado del resto: ícono dorado de frasquito de perfume + "INSPIRADO EN" y debajo "TOM FORD NEROLI PORTOFINO"
 
 
 El frasco permanece centrado y ningún panel ni ícono lo toca ni lo tapa, incluida la tapa y cualquier asa o saliente. Cada ícono de nota muestra el ingrediente específico y se distingue claramente de los demás (no repitas plantas parecidas). Todo el texto en español perfecto, sin errores ni letras inventadas. Estilo publicitario premium, render 3D cinematográfico, 4K, máxima calidad.
