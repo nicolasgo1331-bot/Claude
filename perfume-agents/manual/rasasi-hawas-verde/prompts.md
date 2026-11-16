@@ -46,6 +46,7 @@ DERECHA — panel de cristal translúcido flotante, angosto y pegado al borde de
 - Ícono dorado minimalista + "GÉNERO" y debajo "MASCULINO"
 - Ícono dorado minimalista + "DURACIÓN" y debajo "BUENA (UNAS 7 HS)", con una barra de progreso dorada llena al 70%
 - Ícono dorado minimalista + "OCASIÓN" y debajo "DIARIO / CASUAL", con pequeños íconos dorados: sol, copas, coctel
+- Último dato, separado del resto: ícono dorado de frasquito de perfume + "INSPIRADO EN" y debajo "XERJOFF TORINO 21"
 
 
 El frasco permanece centrado y ningún panel ni ícono lo toca ni lo tapa, incluida la tapa y cualquier asa o saliente. Cada ícono de nota muestra el ingrediente específico y se distingue claramente de los demás (no repitas plantas parecidas). Todo el texto en español perfecto, sin errores ni letras inventadas. Estilo publicitario premium, render 3D cinematográfico, 4K, máxima calidad.
