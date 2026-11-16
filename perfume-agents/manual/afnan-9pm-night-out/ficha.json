@@ -1,0 +1,11 @@
+{
+  "marca": "Afnan", "nombre": "9pm Night Out", "genero": "Unisex", "concentracion": "Extrait de Parfum",
+  "notas": {"salida": ["Pitahaya", "Bergamota", "Coñac", "Lavanda", "Manzana"], "corazon": ["Cardamomo", "Mahonial", "Gamuza", "Tofe", "Cedro"], "fondo": ["Haba tonka", "Akigalawood", "Ambrofix", "Pachulí"]},
+  "acordes_principales": ["dulce", "frutal", "amaderado", "aromático"],
+  "notas_icono": ["Pitahaya", "Lavanda", "Coñac", "Cardamomo", "Cedro", "Haba tonka"],
+  "duracion_horas": 8, "duracion_texto": "Larga", "ocasion": "Noche / Salidas",
+  "iconos_ocasion": ["luna", "copas", "coctel"], "temporada": "Otoño / Invierno (noche)",
+  "inspirado_en": null,
+  "direccion_arte": {"superficie": "losa de obsidiana negra pulida con vetas finas y reflejo suave del frasco", "fondo": "terraza urbana de noche con luces de ciudad doradas y ámbar muy desenfocadas sobre un cielo azul noche casi negro", "paleta": "negro, grafito, plata perlada, magenta intenso de la pitahaya y ámbar del coñac", "luz": "luz cálida lateral dorada con luz de borde fría que defina el relieve texturado del frasco negro", "elementos": ["mitades de pitahaya (fruta del dragón) de pulpa magenta con semillas negras", "copa con coñac ámbar", "ramas de lavanda", "vainas de cardamomo", "rama de cedro", "habas tonka"]},
+  "dudas": ["Fragantica no se pudo abrir; notas de tiendas (Arabic Parfums, Zaoud, Orient Fragance, Scento) que coinciden entre sí. Pasame la captura de Fragantica para confirmar notas, acordes y longevidad.", "Duración: las fuentes dicen 8-10 hs en piel (hasta 12 hs en ropa, dato de marketing). Se usó 8 hs.", "Inspirado en: ninguna fuente lo confirma; se dejó vacío. No confundir con el 9 PM original (otra pirámide).", "Género: tiendas lo listan unisex."]
+}
