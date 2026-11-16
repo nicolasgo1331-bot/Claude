@@ -32,3 +32,37 @@ Hawas Verde está inspirado en Xerjoff Torino 21: lima, manzana y romero bien fr
 Guardalo y escribinos por DM 📩 Originales, envíos a todo el país 🇦🇷
 
 #Rasasi #HawasVerde #PerfumesArabes #PerfumesHombre #AlternativaNicho #FragranceMP
+
+---
+# Versión 2 (reescrita; las de arriba no convencieron)
+
+## A — hook de temporada (recomendada)
+Se viene el calor y este es el perfume que vas a querer usar 🍏☀️
+
+Hawas Verde de Rasasi: lima y manzana verde que te despiertan, romero que le da carácter y un fondo de pachulí y ámbar que lo hace durar. Unas 7 hs y estela fuerte: de los que se notan cuando pasás.
+
+Inspirado en Xerjoff Torino 21 💚
+
+Escribinos por DM y te contamos disponibilidad 📩
+Originales | Envíos a todo el país 🇦🇷
+
+#HawasVerde #Rasasi #PerfumesArabes #PerfumesHombre #PerfumeDeVerano #FragranceMP
+
+## B — corto y directo
+Lima. Manzana verde. Estela fuerte. 💚
+
+Hawas Verde de Rasasi, inspirado en Xerjoff Torino 21. Unas 7 hs de duración, ideal para el día y el calor.
+
+📩 DM para pedirlo | Originales, envíos a todo el país 🇦🇷
+
+#HawasVerde #Rasasi #PerfumesArabes #PerfumesHombre #FragranceMP
+
+## C — pregunta (para comentarios)
+¿Cítrico o frutal? Hawas Verde no te obliga a elegir 🍏🍋
+
+Lima y manzana verde arriba, romero en el corazón y pachulí con ámbar de fondo. Masculino, estela fuerte, unas 7 hs. Inspirado en Xerjoff Torino 21.
+
+Contanos en los comentarios cuál es tu perfume de verano 👇
+📩 Pedilo por DM | Originales, envíos a todo el país 🇦🇷
+
+#HawasVerde #Rasasi #PerfumesArabes #PerfumesHombre #PerfumesVerano #FragranceMP
