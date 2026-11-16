@@ -4,6 +4,7 @@ Superpón con diseño publicitario premium, limpio y minimalista:
 
 IZQUIERDA — columna vertical de {{n_notas}} íconos circulares con borde dorado fino, apilados de forma limpia y a igual distancia. Cada ícono contiene una fotografía macro hiperrealista del ingrediente y debajo su nombre en mayúsculas doradas, en este orden exacto:
 {{lista_notas}}
+(El texto entre paréntesis que empieza con "ilustra:" es solo una guía para elegir la foto del ícono: NO lo escribas en la imagen.)
 
 DERECHA — panel de cristal translúcido flotante, angosto y pegado al borde derecho (glassmorphism sutil, bordes redondeados) con tipografía dorada moderna, muy legible. Contenido exacto, sin cambiar ni una letra:
 - Título: "PERFIL DE LA FRAGANCIA"

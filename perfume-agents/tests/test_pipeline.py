@@ -70,5 +70,12 @@ class Pipeline(unittest.TestCase):
         self.assertEqual(v["pct"], 50)
 
 
+class Pistas(unittest.TestCase):
+    def test_pistas_de_iconos(self):
+        v = fotografo._vars_info({**FICHA, "pistas_iconos": {"Té": "hojas de té verde"}})
+        self.assertIn("2. TÉ (ilustra: hojas de té verde)", v["lista_notas"])
+        self.assertIn("1. LIMÓN\n", v["lista_notas"] + "\n")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,13 @@
+{
+  "marca": "Rasasi", "nombre": "Hawas Verde", "genero": "Masculino", "concentracion": "Eau de Parfum",
+  "notas": {"fragantica": ["Lima", "Romero", "Manzana", "Pachulí", "Ámbar"]},
+  "acordes_principales": ["cítrico", "aromático", "fresco especiado", "amaderado", "afrutado"],
+  "notas_icono": ["Lima", "Romero", "Manzana", "Pachulí", "Ámbar"],
+  "pistas_iconos": {"Lima": "lima verde partida al medio con gotas", "Romero": "ramas de romero con florecitas lilas", "Manzana": "manzana verde entera y una mitad", "Pachulí": "hojas de pachulí: ovaladas, verde oscuro, con vellosidad y borde dentado, distintas del romero", "Ámbar": "trozo de resina ámbar translúcida color miel"},
+  "duracion_horas": 7, "duracion_texto": "Buena", "estela": "Fuerte", "ocasion": "Diario / Casual",
+  "iconos_ocasion": ["sol", "copas", "coctel"], "temporada": "Primavera / Verano (uso de día)",
+  "inspirado_en": null,
+  "direccion_arte": {"superficie": "losa de piedra oscura y mojada junto a una poza de agua verde esmeralda", "fondo": "oasis tropical con pequeña cascada, agua verde esmeralda y hojas tropicales muy desenfocadas", "paleta": "esmeralda, verde lima, amarillo limón y dorado", "luz": "luz cálida de mediodía con luz de borde que haga brillar la tapa dorada y reflejos en el agua", "elementos": ["limas partidas con gotas de agua", "manzanas verdes", "ramas de romero", "trozo de ámbar", "gotas y salpicaduras de agua"]},
+  "fuente": "Captura de Fragantica enviada por el dueño: notas, acordes, longevidad 7 h, estela fuerte, uso de día, 'para hombres', 4.3/5 con 893 votos.",
+  "dudas": ["La captura no muestra la separación salida/corazón/fondo.", "Inspirado en: no hay dato confirmado, se dejó vacío (decí si querés agregarlo).", "Duración 7 hs según Fragantica (una tienda dice 8-10)."]
+}

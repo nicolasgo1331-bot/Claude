@@ -20,9 +20,12 @@ def _vars_escena(f):
 
 def _vars_info(f):
     notas = f["notas_icono"]
+    pistas = f.get("pistas_iconos", {})  # guía visual opcional por nota (no se escribe en la imagen)
     inspirado = cargar("03b_bloque_inspirado", inspirado_en=f["inspirado_en"].upper()) if f.get("inspirado_en") else ""
     dur = f"{f['duracion_texto'].upper()} (UNAS {f['duracion_horas']} HS)"
-    return dict(n_notas=len(notas), lista_notas="\n".join(f"{i}. {n.upper()}" for i, n in enumerate(notas, 1)),
+    return dict(n_notas=len(notas), lista_notas="\n".join(
+                    f"{i}. {n.upper()}" + (f" (ilustra: {pistas[n]})" if n in pistas else "")
+                    for i, n in enumerate(notas, 1)),
                 genero=f["genero"].upper(), duracion=dur, pct=min(100, f["duracion_horas"] * 10),
                 ocasion=f["ocasion"].upper(), iconos_ocasion=", ".join(f["iconos_ocasion"]),
                 bloque_inspirado=inspirado)
