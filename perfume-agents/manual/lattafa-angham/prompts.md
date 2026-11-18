@@ -9,7 +9,7 @@ ESCENA:
 - Superficie: pedestal de travertino cálido y mármol crema sobre una mesa de madera clara. Debe verse como una base real: textura, humedad o pulido natural, sombras de contacto y reflejos coherentes con el material.
 - Fondo: salón elegante cálido con cortinas de seda color crema y un oud (instrumento musical) muy desenfocado, luz de atardecer entrando por una ventana. Natural, creíble y con profundidad (bokeh suave), pensado para que el perfume se sienta intenso.
 - Notas olfativas (avainillado, dulce, lavanda, fresco especiado, atalcado) integradas de forma artística y elegante alrededor y al fondo, con ligero desenfoque: vainas de vainilla y flores de vainilla, ramitas de lavanda, bombones de praliné y chocolate, raíz de jengibre, trozo de ámbar, vainas de cacao abiertas con granos. Nada tapa el frasco ni la caja.
-- Paleta: crema, champagne, dorado, cacao y toques de lavanda y mandarina.
+- Paleta: crema, champagne, dorado, cacao y toques de lavanda y ámbar miel.
 - Luz: luz cálida dorada suave de atardecer con luz de borde que haga brillar la placa dorada estriada del frasco. Iluminación de estudio cinematográfica, luz de borde que defina el contorno, reflejos creíbles.
 
 CALIDAD: fotorrealista, texturas hiperrealistas, ultra detallado, 8K, nitidez en el producto y profundidad de campo fotográfica.
