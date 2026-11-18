@@ -8,7 +8,7 @@ El perfume Lattafa Angham y su caja a juego, exactamente como en la referencia: 
 ESCENA:
 - Superficie: pedestal de travertino cálido y mármol crema sobre una mesa de madera clara. Debe verse como una base real: textura, humedad o pulido natural, sombras de contacto y reflejos coherentes con el material.
 - Fondo: salón elegante cálido con cortinas de seda color crema y un oud (instrumento musical) muy desenfocado, luz de atardecer entrando por una ventana. Natural, creíble y con profundidad (bokeh suave), pensado para que el perfume se sienta intenso.
-- Notas olfativas (gourmand, dulce, ambarado, floral) integradas de forma artística y elegante alrededor y al fondo, con ligero desenfoque: mandarinas y gajos con gotas, raíz de jengibre, granos de pimienta rosa, ramitas de lavanda, granos de cacao y trozos de chocolate, vainas de vainilla, flores de jazmín. Nada tapa el frasco ni la caja.
+- Notas olfativas (avainillado, dulce, lavanda, fresco especiado, atalcado) integradas de forma artística y elegante alrededor y al fondo, con ligero desenfoque: vainas de vainilla y flores de vainilla, ramitas de lavanda, bombones de praliné y chocolate, raíz de jengibre, trozo de ámbar, vainas de cacao abiertas con granos. Nada tapa el frasco ni la caja.
 - Paleta: crema, champagne, dorado, cacao y toques de lavanda y mandarina.
 - Luz: luz cálida dorada suave de atardecer con luz de borde que haga brillar la placa dorada estriada del frasco. Iluminación de estudio cinematográfica, luz de borde que defina el contorno, reflejos creíbles.
 
@@ -34,19 +34,19 @@ Usa la imagen del frasco solo como base y crea una versión informativa, formato
 Superpón con diseño publicitario premium, limpio y minimalista:
 
 IZQUIERDA — columna vertical de 6 íconos circulares con borde dorado fino, apilados de forma limpia y a igual distancia. Cada ícono contiene una fotografía macro hiperrealista del ingrediente y debajo su nombre en mayúsculas doradas, en este orden exacto:
-1. MANDARINA (ilustra: mandarina entera y gajos)
-2. JENGIBRE (ilustra: raíz de jengibre fresca partida)
-3. PIMIENTA ROSA (ilustra: granos de pimienta rosa)
-4. LAVANDA (ilustra: ramitas de lavanda florecida)
-5. CACAO (ilustra: granos de cacao y trozos de chocolate oscuro)
-6. VAINILLA (ilustra: vainas de vainilla y una flor de vainilla)
+1. VAINILLA (ilustra: vainas de vainilla y una flor de vainilla)
+2. LAVANDA (ilustra: ramitas de lavanda florecida)
+3. PRALINÉ (ilustra: bombones de praliné de avellana con chocolate)
+4. JENGIBRE (ilustra: raíz de jengibre fresca partida)
+5. ÁMBAR (ilustra: trozo de resina ámbar translúcida color miel)
+6. CACAO (ilustra: vaina de cacao abierta con granos y cacao en polvo)
 (El texto entre paréntesis que empieza con "ilustra:" es solo una guía para elegir la foto del ícono: NO lo escribas en la imagen.)
 
 DERECHA — panel de cristal translúcido flotante, angosto y pegado al borde derecho (glassmorphism sutil, bordes redondeados) con tipografía dorada moderna, muy legible. Contenido exacto, sin cambiar ni una letra:
 - Título: "PERFIL DE LA FRAGANCIA"
 - Ícono dorado minimalista + "GÉNERO" y debajo "UNISEX"
-- Ícono dorado minimalista + "DURACIÓN" y debajo "LARGA (UNAS 8 HS)", con una barra de progreso dorada llena al 80%
-- Ícono dorado minimalista + "OCASIÓN" y debajo "DIARIO / SALIDAS", con pequeños íconos dorados: sol, luna, copas
+- Ícono dorado minimalista + "DURACIÓN" y debajo "BUENA (UNAS 7 HS)", con una barra de progreso dorada llena al 70%
+- Ícono dorado minimalista + "OCASIÓN" y debajo "DÍA Y NOCHE", con pequeños íconos dorados: sol, luna, copas
 - Último dato, separado del resto: ícono dorado de frasquito de perfume + "INSPIRADO EN" y debajo "BURBERRY GODDESS"
 
 

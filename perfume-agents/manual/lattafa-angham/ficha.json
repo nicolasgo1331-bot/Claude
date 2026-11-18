@@ -1,12 +1,69 @@
 {
-  "marca": "Lattafa", "nombre": "Angham", "genero": "Unisex", "concentracion": "Eau de Parfum",
-  "notas": {"salida": ["Jengibre", "Mandarina", "Pimienta rosa"], "corazon": ["Lavanda", "Praliné", "Cacao", "Jazmín"], "fondo": ["Vainilla", "Ámbar", "Almizcle"]},
-  "acordes_principales": ["gourmand", "dulce", "ambarado", "floral"],
-  "notas_icono": ["Mandarina", "Jengibre", "Pimienta rosa", "Lavanda", "Cacao", "Vainilla"],
-  "pistas_iconos": {"Mandarina": "mandarina entera y gajos", "Jengibre": "raíz de jengibre fresca partida", "Pimienta rosa": "granos de pimienta rosa", "Lavanda": "ramitas de lavanda florecida", "Cacao": "granos de cacao y trozos de chocolate oscuro", "Vainilla": "vainas de vainilla y una flor de vainilla"},
-  "duracion_horas": 8, "duracion_texto": "Larga", "ocasion": "Diario / Salidas",
-  "iconos_ocasion": ["sol", "luna", "copas"], "temporada": "Otoño / Invierno (día y noche)",
+  "marca": "Lattafa",
+  "nombre": "Angham",
+  "genero": "Unisex",
+  "concentracion": "Eau de Parfum",
+  "notas": {
+    "fragantica": [
+      "Vainilla",
+      "Lavanda",
+      "Praliné",
+      "Jengibre",
+      "Ámbar",
+      "Cacao (vaina)"
+    ]
+  },
+  "acordes_principales": [
+    "avainillado",
+    "dulce",
+    "lavanda",
+    "fresco especiado",
+    "atalcado"
+  ],
+  "notas_icono": [
+    "Vainilla",
+    "Lavanda",
+    "Praliné",
+    "Jengibre",
+    "Ámbar",
+    "Cacao"
+  ],
+  "pistas_iconos": {
+    "Vainilla": "vainas de vainilla y una flor de vainilla",
+    "Lavanda": "ramitas de lavanda florecida",
+    "Praliné": "bombones de praliné de avellana con chocolate",
+    "Jengibre": "raíz de jengibre fresca partida",
+    "Ámbar": "trozo de resina ámbar translúcida color miel",
+    "Cacao": "vaina de cacao abierta con granos y cacao en polvo"
+  },
+  "duracion_horas": 7,
+  "duracion_texto": "Buena",
+  "ocasion": "Día y noche",
+  "iconos_ocasion": [
+    "sol",
+    "luna",
+    "copas"
+  ],
+  "temporada": "Todo el año, más otoño/invierno",
   "inspirado_en": "Burberry Goddess",
-  "direccion_arte": {"superficie": "pedestal de travertino cálido y mármol crema sobre una mesa de madera clara", "fondo": "salón elegante cálido con cortinas de seda color crema y un oud (instrumento musical) muy desenfocado, luz de atardecer entrando por una ventana", "paleta": "crema, champagne, dorado, cacao y toques de lavanda y mandarina", "luz": "luz cálida dorada suave de atardecer con luz de borde que haga brillar la placa dorada estriada del frasco", "elementos": ["mandarinas y gajos con gotas", "raíz de jengibre", "granos de pimienta rosa", "ramitas de lavanda", "granos de cacao y trozos de chocolate", "vainas de vainilla", "flores de jazmín"]},
-  "dudas": ["Fragantica no se pudo abrir; notas de tiendas y Parfumo que coinciden (jengibre, mandarina, pimienta rosa / lavanda, praliné, cacao, jazmín / vainilla, ámbar, almizcle). Pasame la captura de Fragantica para confirmar.", "Otro artículo (Orient Fragance en español) lista azafrán, oud y rosa: probablemente una variante o error, se ignoró.", "Inspirado en Burberry Goddess: lo repiten tiendas y reseñas de Parfumo, pero no es oficial; confirmalo.", "No confundir con 'Angham Second Song', otro perfume (dupe de D&G My Devotion).", "Duración: una reseña dice 8+ hs, otra 4/5; se usó 8 hs. Praliné no está entre los íconos por no ser fotografiable."]
+  "direccion_arte": {
+    "superficie": "pedestal de travertino cálido y mármol crema sobre una mesa de madera clara",
+    "fondo": "salón elegante cálido con cortinas de seda color crema y un oud (instrumento musical) muy desenfocado, luz de atardecer entrando por una ventana",
+    "paleta": "crema, champagne, dorado, cacao y toques de lavanda y mandarina",
+    "luz": "luz cálida dorada suave de atardecer con luz de borde que haga brillar la placa dorada estriada del frasco",
+    "elementos": [
+      "vainas de vainilla y flores de vainilla",
+      "ramitas de lavanda",
+      "bombones de praliné y chocolate",
+      "raíz de jengibre",
+      "trozo de ámbar",
+      "vainas de cacao abiertas con granos"
+    ]
+  },
+  "dudas": [
+    "Inspirado en Burberry Goddess: dato de tiendas y reseñas (no oficial); se mantiene salvo que el dueño diga lo contrario.",
+    "La captura no muestra la separación salida/corazón/fondo."
+  ],
+  "estela": "Fuerte",
+  "fuente": "Captura de Fragantica del dueño: notas, acordes, longevidad 7 h, estela fuerte, día y noche, \"para hombres y mujeres\", 4.4/5 con 6146 votos."
 }
