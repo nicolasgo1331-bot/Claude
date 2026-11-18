@@ -16,4 +16,4 @@ DERECHA — columna angosta (aprox. 16% del ancho), alineada con un margen al bo
 
 El frasco permanece centrado y nada lo toca ni lo tapa, incluida la tapa y cualquier saliente. Cada ícono de nota muestra el ingrediente específico y se distingue claramente de los demás. Deja libre la franja inferior central (se colocará allí un logo). Todo el texto en español perfecto, sin errores ni letras inventadas. Estilo editorial premium, limpio, sofisticado, 4K, máxima calidad.
 
-PROHIBIDO: paneles o cajas de cristal, barras de progreso, líneas de luz curvas, aros tipo burbuja, estelas luminosas, texto extra, marcas de agua, datos distintos a los indicados.
+PROHIBIDO: paneles o cajas de cristal, franjas o degradados oscuros a los lados, barras de progreso, líneas de luz curvas, aros tipo burbuja, estelas luminosas, texto extra, marcas de agua, datos distintos a los indicados.
