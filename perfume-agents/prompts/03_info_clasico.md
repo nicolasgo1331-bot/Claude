@@ -1,0 +1,18 @@
+Usa la imagen del frasco solo como base y crea una versión informativa, formato vertical 3:4, respetando exactamente el fondo, la superficie, la luz y la calidad de esa foto, y el frasco idéntico (forma, color, tipografías y logos, sin alterar letras).
+
+Superpón con diseño publicitario premium, limpio y minimalista:
+
+IZQUIERDA — columna vertical de {{n_notas}} íconos circulares con borde dorado fino, apilados de forma limpia y a igual distancia. Cada ícono contiene una fotografía macro hiperrealista del ingrediente y debajo su nombre en mayúsculas doradas, en este orden exacto:
+{{lista_notas}}
+(El texto entre paréntesis que empieza con "ilustra:" es solo una guía para elegir la foto del ícono: NO lo escribas en la imagen.)
+
+DERECHA — panel de cristal translúcido flotante, angosto y pegado al borde derecho (glassmorphism sutil, bordes redondeados) con tipografía dorada moderna, muy legible. Contenido exacto, sin cambiar ni una letra:
+- Título: "PERFIL DE LA FRAGANCIA"
+- Ícono dorado minimalista + "GÉNERO" y debajo "{{genero}}"
+- Ícono dorado minimalista + "DURACIÓN" y debajo "{{duracion}}", con una barra de progreso dorada llena al {{pct}}%
+- Ícono dorado minimalista + "OCASIÓN" y debajo "{{ocasion}}", con pequeños íconos dorados: {{iconos_ocasion}}
+{{bloque_inspirado}}
+
+El frasco permanece centrado y ningún panel ni ícono lo toca ni lo tapa, incluida la tapa y cualquier asa o saliente. Cada ícono de nota muestra el ingrediente específico y se distingue claramente de los demás (no repitas plantas parecidas). Todo el texto en español perfecto, sin errores ni letras inventadas. Estilo publicitario premium, render 3D cinematográfico, 4K, máxima calidad.
+
+PROHIBIDO: líneas de luz curvas, aros tipo burbuja, estelas luminosas alrededor del frasco, texto extra, marcas de agua, datos distintos a los indicados.
